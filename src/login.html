@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Gridxlogin</title>
+</head>
+<body class="min-h-screen grid place-items-center" style="background-image: url('C:\\Users\\yadav\\OneDrive\\Desktop\\gridx-loginpage\\src\\solar.jpg'); background-size: cover; background-repeat: no-repeat;"> <!--class="min-h-screen grid place-items-center"-->
+    <div class="border-2 border-white rounded-lg w-80 h-90">
+        <h3 class="text-4xl ml-16 mt-5"><img src="C:\\Users\\yadav\\OneDrive\\Desktop\\gridx-loginpage\\src\\gridx.png"/></h3>
+        <input type="text" placeholder="username" class="border-2 border-gray-400 mb-1 mt-5 w-72 ml-4 h-10 rounded-md"/><br>
+        <input type="text" placeholder="password" class="border-2 border-gray-400 mb-1 mt-1 w-72 ml-4 h-10 rounded-md" /><br>
+        <button class="bg-yellow-400 ml-32 text-pretty w-16 rounded-sm mt-2 h-8 align-middle" onclick="err()">Sign in</button>
+        <h6 id="mess" class="text-red-600 ml-16"></h6>
+        <div class="ml-8 mt-8 flex items-center space-x-2 mb-1">
+            <p class="text-black">Powered by</p>
+            <a href="http://www.gridx.in" class="text-red-900" target="_blank">Joohitha power systems</a>
+        </div>
+    </div>
+
+    <script>
+        function err() {
+            const mess = document.getElementById("mess");
+            mess.innerText = "Database not integrated!";
+        }
+    </script>
+    
+</body>
+</html>
